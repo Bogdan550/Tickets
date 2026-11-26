@@ -4,7 +4,11 @@ class Tickets:
     def __init__(self, flights = []):
         self.flights = flights
 
-    def set_flight(self, flight):
-        self.flights.append(flight)
+    def add_flight(self):
+        pl = Plane()
+        time_out = None
+        time_in = None
+        prices = None
+        fl = Flight(pl, time_out, time_in, prices)
     def run(self):
         pass
