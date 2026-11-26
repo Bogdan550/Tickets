@@ -1,8 +1,8 @@
 class Flight:
-    def __init__(self, plane, time_out, time_in, number):
+    def __init__(self, plane, time_out, time_in, prices):
         self.plane = plane
         self.time_out = time_out
         self.time_in = time_in
-        self.number = number
+        self.prices = prices
     def get_info(self):
-        return self.number, self.plane.name, self.time_out, self.time_in
+        return self.plane, self.time_out, self.time_in, self.prices

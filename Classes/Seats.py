@@ -1,40 +1,27 @@
 class Seat:
     def __init__(self):
-        self.taken = False
-        self.price = None
+        self.__taken = False
+        self.__name = None
 
     def take_seat(self):
-        self.taken = not self.taken
+        self.__taken = not self.__taken
 
-    def get_seat(self):
-        return self.taken
-
-    def get_price(self):
-        return self.price
-
+    def get_taken(self):
+        return self.__taken
+    def get_name(self):
+        return self.__name
 
 class BusinessSeat(Seat):
-    def __init__(self, price):
+    def __init__(self, name):
         super().__init__()
-        self.price = price
-
-    def get_price(self):
-        return self.price
-
+        self.name = name
 
 class ComfortSeat(Seat):
-    def __init__(self, price):
+    def __init__(self, name):
         super().__init__()
-        self.price = price
-
-    def get_price(self):
-        return self.price
-
+        self.name = name
 
 class EconomySeat(Seat):
-    def __init__(self, price):
+    def __init__(self, name):
         super().__init__()
-        self.price = price
-
-    def get_price(self):
-        return self.price
+        self.name = name
