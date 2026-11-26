@@ -4,5 +4,6 @@ class Flight:
         self.time_out = time_out
         self.time_in = time_in
         self.prices = prices
+
     def get_info(self):
         return self.plane, self.time_out, self.time_in, self.prices
