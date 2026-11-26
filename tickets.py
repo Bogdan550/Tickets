@@ -6,3 +6,6 @@ class Seat:
 
 class FirstClassSeat(Seat):
     pass
+
+class BusinessClassSeat(Seat):
+    pass
